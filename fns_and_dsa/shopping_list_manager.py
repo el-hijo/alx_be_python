@@ -9,9 +9,9 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
         
-        if choice == "1":
+        if choice == 1:
             while True:
                 add_item = input("Enter item to add: ")
                 if add_item == "exit":
@@ -19,7 +19,7 @@ def main():
                 else:
                     shopping_list.append(add_item)
                     pass
-        elif choice == "2":
+        elif choice == 2:
             while True:
                 remove_item = input("Enter item to remove(type 'exit' to return to main menu): ") 
                 if remove_item == "exit":
@@ -29,13 +29,13 @@ def main():
                 else: 
                     shopping_list.remove(remove_item)
             pass
-        elif choice == "3":
+        elif choice == 3:
             i = 0
             for items in shopping_list:
                 i += 1
                 print(f"{i}. {items}")
             pass
-        elif choice == "4":
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
