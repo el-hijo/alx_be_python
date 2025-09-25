@@ -9,12 +9,11 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))
+        choice = input("Enter your choice: ")
         
         if choice == "1":
             while True:
-                add_item = input("Enter item to add",
-                                 "(type 'exit' to return to main menu): ")
+                add_item = input("Enter item to add: ")
                 if add_item == "exit":
                     break
                 else:
