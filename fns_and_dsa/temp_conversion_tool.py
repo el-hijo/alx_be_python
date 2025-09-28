@@ -16,7 +16,7 @@ def main():
         except ValueError:
             print("Invalid temperature. Please enter a numeric value.")
             continue
-        temperature_unit = input("Is this temperature in celsius or fahrenheit? (C/F)")
+        temperature_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
         if temperature_unit not in ("C","F"):
             print("Invalid temperature unit. Please enter 'C' or 'F'")
         elif temperature_unit == "C":
