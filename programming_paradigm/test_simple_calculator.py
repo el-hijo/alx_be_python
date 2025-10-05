@@ -9,8 +9,10 @@ class TestSimpleCalculator(unittest.Testcase):
          self.zero = 0
          
     def test_add(self):
-        result = add(self.a, self.b)
-        self.assertEqual(result, 30)
+        self.assertEqual(self.calc.add(20, 10), 30)
+    
+    def test_add_negative(self):
+        self.assertEqual(self.calc.add(-20, 10), -10)
     
     def test_subtract(self):
         result = subtract(self.a, self.b)
