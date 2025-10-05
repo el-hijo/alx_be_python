@@ -5,6 +5,7 @@ class Book:
         self.__is_checked_out = False
     def check_out(self):
         if not self.__is_checked_out:
+            self._is_checked_out = True
             print(f"'{self.title}' has been checked out.")
         else:
             print(f"'{self.title}' is already checked out.")
