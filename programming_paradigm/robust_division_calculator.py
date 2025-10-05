@@ -10,4 +10,4 @@ def safe_divide(numerator, denominator):
     else:
         print(f"The result of the division is {result:.1f}")
     finally:
-        print("Finished.")
+        pass
