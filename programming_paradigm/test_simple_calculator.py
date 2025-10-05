@@ -20,19 +20,18 @@ class TestSimpleCalculator(unittest.Testcase):
     def test_subtraction_negative(self):
         self.assertEqual(self.calc.subract(-20, 10), -30)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(20, 10), 200)
         
-    def test_multiply_negative_a(self):
+    def test_multiplication_negative_a(self):
         self.assertEqual(self.calc.multiply(-20, 10), -200)
     
-    def test_multiply_negative_a_b(self):
+    def test_multiplication_negative_a_b(self):
         self.assertEqual(self.calc.multiply(-20, -10), 200)
     
         
-    def test_divide(self):
-        result = divide(self.a, self.b)
-        self.assertEqual(result, 2)
+    def test_division(self):
+        self.assertEqual(self.calc.divide(20, 10), 2)
         
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
