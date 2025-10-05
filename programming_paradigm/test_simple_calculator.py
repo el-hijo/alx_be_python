@@ -15,12 +15,20 @@ class TestSimpleCalculator(unittest.Testcase):
         self.assertEqual(self.calc.add(-20, 10), -10)
     
     def test_subtract(self):
-        result = subtract(self.a, self.b)
-        self.assertEqual(result, 10)
+        self.assertEqual(self.calc.subtract(20, 10), 10)
+        
+    def test_subtract_negative(self):
+        self.assertEqual(self.calc.subract(-20, 10), -30)
 
     def test_multiply(self):
-        result = multiply(self.a, self.b)
-        self.assertEqual(result, 200)
+        self.assertEqual(self.calc.multiply(20, 10), 200)
+        
+    def test_multiply_negative_a(self):
+        self.assertEqual(self.calc.multiply(-20, 10), -200)
+    
+    def test_multiply_negative_a_b(self):
+        self.assertEqual(self.calc.multiply(-20, -10), 200)
+    
         
     def test_divide(self):
         result = divide(self.a, self.b)
