@@ -15,7 +15,7 @@ class Circle(Shape):
     def __init__(self,radius):
         self.radius = radius
     def area(self):
-        return math.pi * self.radius **2
+        return math.pi * self.radius ** 2
     
 rectangle = Rectangle(5,10)
 rectangle.area()
